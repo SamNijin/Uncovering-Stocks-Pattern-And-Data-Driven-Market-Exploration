@@ -6,10 +6,10 @@ from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 
 # Sample stock and revenue data (replace with your actual data)
-stock_data_df = pd.read_csv('/extracted-datasets/tesla-stocks.csv')  # Replace with your data
-tesla_revenue = pd.read_csv('/extracted-datasets/tesla-revenue.csv')  # Replace with your data
-gme_df = pd.read_csv('/extracted-datasets/game-stop-stocks.csv')  # Replace with your data
-gme_revenue = pd.read_csv('/extracted-datasets/game-stop-revenue.csv')  # Replace with your data
+stock_data_df = pd.read_csv('../extracted-datasets/tesla-stocks.csv')  # Replace with your data
+tesla_revenue = pd.read_csv('../extracted-datasets/tesla-revenue.csv')  # Replace with your data
+gme_df = pd.read_csv('../extracted-datasets/game-stop-stocks.csv')  # Replace with your data
+gme_revenue = pd.read_csv('../extracted-datasets/game-stop-revenue.csv')  # Replace with your data
 
 def make_graph(stock_data, revenue_data, stock):
     fig = make_subplots(rows=2, cols=1, shared_xaxes=True, subplot_titles=("Historical Share Price", "Historical Revenue"), vertical_spacing=.3)
