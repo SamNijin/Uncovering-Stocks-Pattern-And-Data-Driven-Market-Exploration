@@ -26,7 +26,8 @@ def make_graph(stock_data, revenue_data, stock):
 
 # Create a Dash app
 app = Dash(__name__)
-server=app.server
+server = app.server
+
 app.layout = html.Div([
     html.H1("Stock Visualization Dashboard", style={'text-align':'center'}),
     dcc.Dropdown(
